@@ -1,0 +1,21 @@
+/* Remove header */
+#header {
+    min-height: 0;
+    z-index: auto;
+}
+
+.toolbar.toolbar-addressbar {
+	z-index: 1;
+    margin-right: 150px!important;
+	margin-left: 120px!important;
+    height: 34px;
+	-webkit-app-region: drag;
+    }
+    
+/* Keep Vivaldi menu button + Window buttons */
+.vivaldi,
+.window-buttongroup {
+    z-index: 50;
+	height: 34px;
+	-webkit-app-region: no-drag;
+}
