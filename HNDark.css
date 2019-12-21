@@ -1,0 +1,117 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+body {
+    background-color: #000 !important;
+    
+}
+
+body > center > table, input, textarea {
+    background-color: #1629682e !important;
+}
+
+body > center > table > tbody > tr:first-child > td {
+    
+    background-color: #000a2b80 !important;
+    }
+
+span.pagetop
+{
+    font-family: Roboto !important;
+    font-size: 8px !important;
+    padding-left: 0px !important;
+    color: #3c3c3c !important;
+}
+
+/* Bright text */
+td.title a:link, span.yclinks a:link, body:not([id]), td:nth-child(2):not(.subtext) > a:link, input, textarea, p > a:link, a > u, span.comment font, span.comment font a:link, a[href="http://www.ycombinator.com/apply/"], span.rank
+{
+    font-family: Calibri !important;
+    font-size: 16px !important;
+    padding-left: 5px !important;
+    color: #e6e6e6 !important;
+    line-height: 40px;
+}
+
+.votearrow
+{
+    display: none;
+    
+}
+.c00,  .c5a
+{
+    font-family: Arial !important;
+    font-size: 12px !important;
+    padding: 0px !important;
+    color: #ececec !important;
+
+}
+
+.c00 a:link
+{
+    
+    font-family: Arial !important;
+    font-size: 12px !important;
+    padding: 0px !important;
+    color: #ececec !important;
+    
+
+}
+
+
+.admin td {
+    color: #aaa !important;
+}
+
+a, td.subtext, span.age, span.comhead
+{
+    font-family: Arial !important;
+    padding: 0px !important;
+    font-size: 10px !important;    
+    color: #717171 !important;
+    
+    
+}
+
+a.hnuser
+{
+    font-family: Arial !important;
+    padding: 0px !important;
+    font-size: 10px !important;    
+    color: #a4a4a4 !important;
+    background-color: #8e37194d !important;
+}
+
+code
+{
+    font-family: Courier New !important;
+    font-size: 10px !important;    
+    color: #fff !important;
+    background-color: #444 !important; 
+    padding: 0px !important;
+}
+
+
+/* search box and comment box */
+input {
+    font-family: Arial !important;
+    font-size: 8px !important;
+    width: 60px !important;
+    height: 30px !important;
+    text-align: center !important;
+    padding: 1px !important;
+    }
+
+textarea
+{
+    border: .5px solid important;
+    font-family: Arial !important;
+    padding: 1px !important;
+    width: 550px !important;
+    height: 80px !important;
+}
+
+
+/* upvote */
+.votearrow {
+    color: red !important;
+}
