@@ -1,0 +1,152 @@
+:root
+{
+--color: gray;
+    
+}
+
+/*sidebar starts */
+table.m,
+table.m.a {
+
+    display: block;
+    margin: 12px -16px 10px 35px;
+    height: max-content;
+    line-height: 29px;
+    font-family: Sans Serif;
+    background-color: #dcdcdc;
+    width: 150px;
+}
+
+.th td,
+.th th {
+    border-bottom: 12px solid #dcdcdc;
+}
+
+.th .ts {
+
+    height: 1.3em;
+    overflow: hidden;
+    display: block;
+    text-align: justify;
+}
+
+
+/*display none all*/
+a.gb1, b.gb1, a[href="?&v=cl"]
+{
+    display: none;
+}
+/*display:none ends*/
+tr,
+#guser {
+    background-color: #dcdcdc;
+}
+
+/* search box */
+td.sbf,
+input#sbq {
+
+    padding: 0px 0px 0px 2px;
+    width: 750px;
+    font-family: Monospace;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+}
+
+.r {
+    background-color: #eee;
+    padding: 12px 10px 10px 10px;
+    width: -moz-max-content;
+    border-radius: 5px;
+    font-family: Verdana;
+    color: teal;
+}
+
+.msg {
+    padding: 29px;
+    background-color: whitesmoke;
+    display: block;
+    border-radius: 14px;
+    border-style: inset;
+    border-color: unset;
+}
+
+.h {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    border-width: 2px;
+    border-spacing: revert;
+}
+
+h1 b,
+h2 b,
+h3 b,
+h4 b,
+h5 b,
+h6 b {
+    color: #242424 !important;
+}
+
+/*buttons*/
+
+input.search-form-submit, input[name="nvp_bu_qtf"], input[name="nvp_bu_send"], input[name="nvp_bu_sd"],input[name="nvp_a_arch"],input[name="nvp_a_sp"],input[name="nvp_a_tr"] {
+    border-radius: 5px;
+    color: #535353;
+    background-color: #c4c4c4;
+}
+
+input.search-form-submit:hover, input[name="nvp_bu_qtf"]:hover, input[name="nvp_bu_send"]:hover, input[name="nvp_bu_sd"]:hover, input[name="nvp_a_arch"]:hover,input[name="nvp_a_sp"]:hover,input[name="nvp_a_tr"]:hover {
+    background-color: #f7f7f7cf;
+    color:black;
+}
+
+a[href="?&pv=tl&v=as"], a[href="?&pv=tl&v=caf"], a[href="?&s=s"], a[href="?&"], a[href="?&s=r"],a[href="?&s=d"], a[href="?&s=a"]  {
+    background-color: #8c8c8c00;
+    font-family: verdana;
+}
+
+
+a.gb4, b.gb4
+{
+    padding: 0 10px 0 ;
+    border-radius: 5px;
+    background-color: #cecece;
+}
+
+.qr textarea {
+    width: 1000px;
+    font-family: arial,sans-serif;
+    font-size: 100%;
+    height: 50px;
+}
+
+display:flex
+body
+{
+    background-color: var(--color);
+}
+
+table.m, td.a 
+{
+    font-family: monospace;
+    color: red;
+}
+
+tr:hover{
+    color: red;
+    font-family: Times New Roman;
+    padding: 10px 5px 10px 5px;
+}
+
+tr
+{
+    background-color: #dcdcdc;
+}
+
+.sbf {
+    padding: 100px 5px 10px 5px;
+}
+
+
