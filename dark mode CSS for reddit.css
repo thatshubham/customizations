@@ -11,14 +11,14 @@ body {
         font-family: Helvetica, Arial, Sans
     }
     .link .title {
-        font-size: 17px
+        font-size: 17px;
     }
     .tagline,
     .search-result-meta {
-        font-size: 11px
+        font-size: 11px;
     }
     a {
-        color: #70757b
+        color: #70757b;
     }
     a:hover {
         color: #d4d7db !important;
