@@ -1,0 +1,67 @@
+/* [Article Content]: Full Width */
+
+.inlineFrame .u100Entry, .inlineFrame .entryBody {
+max-width: 100%!important;
+}
+
+/* Wide Magazine + Wide Feedly */
+
+#sideArea, .col-xl-3.xlarge-only {
+display: none!important;
+}
+
+.today .col-xs-12.col-md-12, .today .col-lg-12.col-xl-9,
+.board .col-xs-12.col-md-12, .board .col-lg-12.col-xl-9 {
+width: 100%!important;
+}
+
+.fx .entry.u4, .fx .entry.u12 {
+max-width: none!important;
+}
+
+.inlineFrame .u100Entry {
+margin-left: auto!important;
+margin-right: auto!important;
+}
+
+.container.centered, .header.row {
+max-width: none!important;
+}
+
+.fx .entry.u5 {
+clear: none!important;
+}
+
+.fx .entry.u5 {
+margin: -8px 24px 40px -8px!important;
+}
+
+.inlineFrame {
+margin-left: 0!important;
+margin-right: 0!important;
+}
+
+.fx .entry.u4 .visual, .fx .entry.u12 .visual {
+width: 192px!important;
+height: 114px!important;
+}
+
+/* Un-Pro */
+
+.entry.density-29.bsa-native-ad, .fx .modal-overlay.is-inline.is-fading,
+.small.pro.primary, #searchBarFX .accent.primary.small {
+display: none!important;
+}
+
+.fx .entry.u4 .title {
+    font-family: Open Sans !important;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 1.25em;
+    margin-bottom: 0.25rem;
+    margin-top: 0;
+    text-decoration: none;
+    width: 100%;
+}
+
