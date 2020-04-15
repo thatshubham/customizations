@@ -1,0 +1,115 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+body {
+    background-color: #171d28 !important;
+    }
+
+
+body > center > table, input, textarea {
+    background-color: #0d203f85 !important;
+}
+
+body > center > table > tbody > tr:first-child > td {
+    
+    background-color: #000a2bad !important;
+    }
+
+span.pagetop
+{
+    font-family: Roboto !important;
+    font-size: 12px !important;
+    padding-left: 10px !important;
+    color: #2c2c2c00 !important;
+}
+
+/* Bright text */
+td.title a:link, span.yclinks a:link, body:not([id]), td:nth-child(2):not(.subtext) > a:link, input, textarea, p > a:link, a > u, span.comment font, span.comment font a:link, a[href="http://www.ycombinator.com/apply/"], span.rank
+{
+    font-family: Calibri !important;
+    font-size: 1.4em !important;
+    font-weight: bold;
+    padding-left: 2px !important;
+    color: #ebebeb !important;
+    line-height: 50px;
+}
+
+/* //comments */
+.c00,  .c5a, .c73, .c9c
+{
+    font-family: Roboto !important;
+    font-size: 1.2em !important;
+    padding: 5px !important;
+    color: #ececec !important;
+    line-height: 110%; 
+
+}
+
+/*  links in comments */
+span.age, td.subtext, .c00 a:link, .pagetop a, .subtext a, .comment a:link, .score
+{
+    font-size: 0.9em !important;
+    padding: 0px !important;
+    color: #767676 !important;
+    font-family: Bahnschrift !important;
+    font-weight: 200;
+}
+
+.pagetop a:hover, .subtext a:hover, .comment a:link:hover {
+    font-size: 21px;
+}
+
+.admin td {
+    color: #aaa !important;
+}
+
+a, span.comhead
+{
+    font-family: Bahnschrift !important;
+    padding: 2px !important;
+    font-size: 0.9em !important;    
+    color: #b2b2b2 !important;    
+}
+
+a.hnuser
+{
+    font-family: Bahnschrift !important;
+    font-size: 0.92em !important;
+    padding: 0px !important;
+    font-weight: 400;   
+    color: #cdcdcded !important;
+    background-color: #303030c7 !important;
+}
+
+code
+{
+    font-family: Courier New !important;
+    font-size: 1.1em !important;    
+    color: #fff !important;
+    background-color: #2e2e2e !important; 
+    padding: 0px !important;
+    font-weight: 400;
+}
+
+
+/* search box and comment box */
+input {
+    font-family: Arial Narrow !important;
+    font-weight: bold;
+    }
+
+textarea
+{
+    border: .5px solid !important;
+    font-family: Verdana !important;
+    font-weight: bold;
+    line-height: 95%;
+    font-size: 11px !important;
+    padding: 5px !important;
+    background-color: #000 !important;
+}
+
+
+/* upvote */
+.votearrow {
+    color: #eaff29 !important;
+}
