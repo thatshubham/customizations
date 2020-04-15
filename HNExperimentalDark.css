@@ -24,11 +24,11 @@ span.pagetop
 }
 
 /* Bright text */
-td.title a:link, span.yclinks a:link, body:not([id]), td:nth-child(2):not(.subtext) > a:link, input, textarea, p > a:link, a > u, span.comment font, span.comment font a:link, a[href="http://www.ycombinator.com/apply/"], span.rank
+td.title a:link, span.yclinks a:link, body:not([id]), td:nth-child(2):not(.subtext) > a:link, input, textarea, p > a:link, a > u, span.comment font, span.comment font a:link, a[href="http://www.ycombinator.com/apply/"], span.rank, .votearrow
 {
     font-family: Calibri !important;
     font-size: 1.4em !important;
-    font-weight: bold;
+    font-weight: 600 !important;
     padding-left: 2px !important;
     color: #ebebeb !important;
     line-height: 50px;
@@ -121,7 +121,3 @@ textarea
 }
 
 
-/* upvote */
-.votearrow {
-    color: #eaff29 !important;
-}
