@@ -17,9 +17,10 @@ body > center > table > tbody > tr:first-child > td {
 span.pagetop
 {
     font-family: Roboto !important;
-    font-size: 12px !important;
-    padding-left: 10px !important;
-    color: #2c2c2c00 !important;
+    font-size: 0.9em !important;
+    margin-left: 35% !important;
+    padding: 20px !important;;
+    color: #515151 !important;
 }
 
 /* Bright text */
@@ -30,7 +31,7 @@ td.title a:link, span.yclinks a:link, body:not([id]), td:nth-child(2):not(.subte
     font-weight: bold;
     padding-left: 2px !important;
     color: #ebebeb !important;
-    line-height: 50px;
+    line-height: 10px;
 }
 
 /* //comments */
@@ -92,9 +93,20 @@ code
 
 
 /* search box and comment box */
-input {
-    font-family: Arial Narrow !important;
-    font-weight: bold;
+input{
+    font-family: Bahnschrift !important;
+    font-weight: lighter;
+    padding: 5px 5px 5px 5px !important;
+    font-size: 0.8em !important;
+    background-color: #294371 !important;
+    border: 0.9em;
+}
+
+input:hover {
+    color: #66bcf0 !important;
+    background-color: #16181c !important;
+    cursor: pointer !important;
+    border: 1.1em !important;
     }
 
 textarea
