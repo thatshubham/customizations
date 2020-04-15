@@ -6,47 +6,45 @@ body {
 
 
 body > center > table, input, textarea {
-    background-color: #0d203f85 !important;
+    background-color: #0e162385 !important;
 }
 
 body > center > table > tbody > tr:first-child > td {
     
-    background-color: #000a2bad !important;
+    background-color: #00010385 !important;
     }
 
 span.pagetop
 {
     font-family: Roboto !important;
     font-size: 0.9em !important;
-    margin-left: 35% !important;
-    padding: 20px !important;;
+    padding: 2px !important;;
     color: #515151 !important;
 }
 
 /* Bright text */
-td.title a:link, span.yclinks a:link, body:not([id]), td:nth-child(2):not(.subtext) > a:link, input, textarea, p > a:link, a > u, span.comment font, span.comment font a:link, a[href="http://www.ycombinator.com/apply/"], span.rank, .votearrow
+td.title a:link, span.yclinks a:link, body:not([id]), td:nth-child(2):not(.subtext) > a:link, input, p > a:link, a > u, span.comment font, span.comment font a:link, a[href="http://www.ycombinator.com/apply/"]
 {
     font-family: Calibri !important;
     font-size: 1.4em !important;
     font-weight: 600 !important;
-    padding-left: 2px !important;
+    margin-left: 0.em !important;
     color: #ebebeb !important;
-    line-height: 50px;
 }
 
 /* //comments */
-.c00,  .c5a, .c73, .c9c
+.c00,  .c5a, .c73, .c9c, .c88
 {
     font-family: Roboto !important;
     font-size: 1.2em !important;
-    padding: 5px !important;
     color: #ececec !important;
-    line-height: 110%; 
+    line-height: 100%;
+    cursor: default;
 
 }
 
 /*  links in comments */
-span.age, td.subtext, .c00 a:link, .subtext a, .comment a:link, .score
+span.age, td.subtext, .subtext a, .comment a:link, .score
 {
     font-size: 0.9em !important;
     padding: 0px !important;
@@ -93,31 +91,37 @@ code
 
 
 /* search box and comment box */
-input{
+input {
     font-family: Bahnschrift !important;
     font-weight: lighter;
     padding: 5px 5px 5px 5px !important;
     font-size: 0.8em !important;
-    background-color: #294371 !important;
+    background-color: #141414 !important;
     border: 0.9em;
 }
 
-input:hover {
+.votearrow:hover, input:hover {
     color: #66bcf0 !important;
     background-color: #16181c !important;
     cursor: pointer !important;
     border: 1.1em !important;
     }
+.votearrow {
+    margin-right: 0.8em !important;
+}
 
 textarea
 {
     border: .5px solid !important;
     font-family: Verdana !important;
     font-weight: bold;
-    line-height: 95%;
+    line-height: 100% !important;
     font-size: 11px !important;
     padding: 5px !important;
+    color: #b6b6b6;
+    cursor: text;
     background-color: #000 !important;
 }
-
-
+span.rank{
+    display:none;
+}
