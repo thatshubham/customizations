@@ -17,9 +17,8 @@ body > center > table > tbody > tr:first-child > td {
 span.pagetop
 {
     font-family: Roboto !important;
-    font-size: 0.9em !important;
-    padding: 2px !important;;
-    color: #515151 !important;
+    font-size: 0.8em !important;
+    color: #515151 !important;  
 }
 
 /* Bright text */
@@ -35,12 +34,15 @@ td.title a:link, span.yclinks a:link, body:not([id]), td:nth-child(2):not(.subte
 /* //comments */
 .c00,  .c5a, .c73, .c9c, .c88
 {
-    font-family: Roboto !important;
+    font-family:Roboto;
     font-size: 1.2em !important;
     color: #ececec !important;
-    line-height: 100%;
+    line-height: 120%;
     cursor: default;
+    letter-spacing: 0.5px;
+    font-size-adjust: 0.5;
 
+    
 }
 
 /*  links in comments */
@@ -108,6 +110,9 @@ input {
     }
 .votearrow {
     margin-right: 0.8em !important;
+}
+#hnmain > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) {
+    display: none !important;
 }
 
 textarea
