@@ -54,15 +54,16 @@ display: none!important;
 }
 
 .fx .entry.u4 .title {
-    font-family: Open Sans !important;
-    display: inline-block;
-    font-size: 15px;
+    font-size: 22px;
+    font-weight: 100 !important;
+    font-family: Times New Roman !important;
     letter-spacing: 0;
-    line-height: 1.25em;
+    line-height: 1.05em;
     margin-bottom: 0.25rem;
     margin-top: 0;
     text-decoration: none;
     width: 100%;
+    color: white !important;
 }
 .theme--dark #topHeaderBarFX
 {
@@ -111,3 +112,23 @@ display: none!important;
     justify-content: space-between;
     padding: 0.65rem 0 50rem;
 }
+
+.fx .entry.u0 .content .title {
+    display: inline;
+    font-size: 12px;
+    font-weight: 200 !important;
+    font-family: Times New Roman !important;
+    line-height: 2px !important;
+    padding-right: 0.6rem;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.summary {
+    padding: 0px !important;
+    margin-bottom: 10px !important;
+    font-family: Arial !important;
+    font-size: 1.2em !important;
+    color: #c6c6c6 !important;
+    }
