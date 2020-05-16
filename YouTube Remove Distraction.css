@@ -1,0 +1,3 @@
+ytd-primetime-promo-renderer.style-scope, ytd-rich-section-renderer.style-scope:nth-child(14) > div:nth-child(1) > ytd-rich-shelf-renderer:nth-child(1) > div:nth-child(1), ytd-rich-section-renderer.style-scope:nth-child(19) > div:nth-child(1) > ytd-rich-shelf-renderer:nth-child(1) > div:nth-child(1) {
+    display: none !important;
+}
