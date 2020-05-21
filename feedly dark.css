@@ -69,20 +69,29 @@ display: none!important;
     margin-top: 1rem !important;
 }
 
-.LeftnavListRow, .LeftnavListRow__count {
+.LeftnavListRow, .LeftnavListRow__count, .LeftnavListRow__text  {
     border-left: 2px solid transparent;
-    color: #333333;
-    cursor: pointer;
-    font-size: 0.615rem;
-    line-height: 1.5rem;
+    font-family: Bahnschrift !important;
+    color: #bdbdbd;
+    font-size: 0.655rem !important;
+    line-height: 1.3rem;
     padding-left: 5px;
     padding-right: 10px;
+    font-weight: 200 !important;
 }
-.LeftnavList__heading {
 
+.LeftnavListRow:hover, .LeftnavListRow__text:hover {
+    cursor: pointer;
+    padding-left: 6px;
+    font-size: 0.815rem;
+    color: #fafafa;
+}
+
+.LeftnavList__heading {
     color: #9e9e9e;
-    font-size: .5875rem;
+    font-size: .615rem;
     text-transform: uppercase;
+    font-weight: 600 !important;
 }
 .m-b-2 {
     margin-bottom: 1rem !important;
@@ -91,14 +100,7 @@ display: none!important;
     margin-top: 0.5rem !important;
 }
 
-.LeftnavDock {
-    background-color: #fff;
-    border-right-color: #353535;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0.65rem 0 50rem;
-}
+
 
 .fx .entry.u0 .content .title {
     display: inline;
@@ -111,17 +113,26 @@ display: none!important;
     
 }
 
-.summary {
+.summary, li.MemeSummary__item {
     padding: 0px !important;
     margin-bottom: 10px !important;
     font-family: Calibri !important;
     font-size: 1.2em !important;
     color: #cecece !important;
-    font-style: italic;
-    }
+    font-weight: 100 !important;
+}
+
+.theme--dark .LeftnavDock {
+    background-color: #111;
+    border-right-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.65rem 5 50rem;
+}
 
 .fx .entry.u4 .title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600 !important;
     font-family: Bahnschrift !important;
     line-height: 1.15em;
@@ -130,4 +141,7 @@ display: none!important;
     text-decoration: none;
     width: 100%;
     color: #e6e6e6 !important;
+}
+div.LeftnavListRow:nth-child(8), div.LeftnavListRow:nth-child(4) > span:nth-child(2) {
+    padding-top: 20px !important;
 }
