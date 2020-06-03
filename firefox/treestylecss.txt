@@ -1,0 +1,140 @@
+tab-item {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600;
+  border: none;
+  outline: 0.5px solid hsla(0, 0%, 0%, 0.09);
+  --tab-size: 30px !important;
+  height: var(--tab-size);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 8px;
+  vertical-align: center;
+  padding: 0 0 0 8px !important;
+  padding-right: 0 !important;
+  margin: 0 0 0 0;
+}
+
+tab-item.unread {
+  opacity: .5;
+}
+
+.tabs::after {
+  content: '';
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: 10;
+  pointer-events: none;
+
+  box-shadow: 
+    inset 0 24px 38px  3px rgba(0,0,0,0.14),
+    inset 0  9px 46px  8px rgba(0,0,0,0.12),
+    inset 0 11px 15px -7px rgba(0,0,0,0.20),
+    inset 0  2px  2px  0   rgba(0,0,0,0.14),
+    inset 0  3px  1px -2px rgba(0,0,0,0.12),
+    inset 0  1px  5px  0   rgba(0,0,0,0.20) !important;
+}
+
+tab-item.active {
+  padding-right: 5px !important;
+  margin-right: 0px !important;
+  z-index: 100;
+  box-shadow: 
+    0 24px 38px  3px rgba(0,0,0,0.14),
+    0  9px 46px  8px rgba(0,0,0,0.12),
+    0 11px 15px -7px rgba(0,0,0,0.20),
+    0  2px  2px  0   rgba(0,0,0,0.14),
+    0  3px  1px -2px rgba(0,0,0,0.12),
+    0  1px  5px  0   rgba(0,0,0,0.20) !important;
+}
+
+tab-item.active::after {
+  border-right: 5px solid currentcolor;
+  opacity: .5;
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0; right: 0;
+}
+
+tab-item.active > :nth-child(8),
+tab-item > :nth-child(8)::before,
+tab-item > :nth-child(8)::after {
+  display: none !important;
+}
+tab-item > tab-favicon {
+  order: 1;
+}
+tab-item > tab-label {
+  order: 2;
+}
+tab-item > tab-sound-button {
+  grid-area: sound;
+  order: 3;
+}
+tab-item > tab-counter {
+  order: 4;
+}
+tab-item > tab-twisty {
+  order: 99 !important;
+  position: unset;
+  display: block;
+}
+tab-item:not([data-child-ids]) tab-twisty,
+tab-item.pinned tab-twisty,
+tab-item.collapsed tab-twisty {
+  display: none !important;
+}
+tab-item > * {
+  margin-left: 10 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 10 !important;
+}
+
+.newtab-button::before {
+  width: 12px;
+  margin: 0px;
+}
+
+#tabbar {
+  bottom: 6px !important;
+}
+
+tab-item::before {
+  content: var(--overlay-content);
+  background: var(--overlay-color);
+  position: absolute;
+  left: 0; top: 0; bottom: 0; right: 0;
+}
+
+tab-item[data-current-uri^="https://github.com"],
+tab-item[data-current-uri^="https://gist.github.com"] {
+  --overlay-content: '';
+  --overlay-color: hsla(195, 100%, 70%, .15);
+}
+tab-item[data-current-uri^="https://api.flutter.dev"],
+tab-item[data-current-uri^="https://pub.dev/documentation"],
+tab-item[data-current-uri^="https://flutter.dev/docs"] {
+  --overlay-content: '';
+  --overlay-color: hsla(225, 60%, 50%, .15);
+}
+tab-item[data-current-uri^="https://stackoverflow.com"] {
+  --overlay-content: '';
+  --overlay-color: hsla(25, 100%, 25%, .15);
+}
+tab-item[data-current-uri^="about:"] {
+  --overlay-content: '';
+  --overlay-color: hsla(0, 0%, 0%, .35);
+}
+/*tab-item[data-current-uri^="https://www.google.com"],
+tab-item[data-current-uri^="https://google.com"] {
+  --overlay-content: '';
+  --overlay-color: hsla(350, 100%, 22%, .15);
+}*/

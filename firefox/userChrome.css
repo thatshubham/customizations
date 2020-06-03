@@ -1,0 +1,274 @@
+:root, window, page, dialog, wizard, toolbar, .cui-widget-panel, #widget-overflow {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	/*letter-spacing: .01rem; */
+}
+
+:root, vbox, scrollbox {
+	scrollbar-color: hsla(0, 0%, 100%, 0.1) transparent !important;
+	scrollbar-width: thin !important;
+}
+
+:root {
+	--acrylic-backdrop-filter: blur(50px);
+	--acrylic-background-blend-mode: exclusion;
+	--acrylic-background-image: url("chrome://global/skin/media/imagedoc-lightnoise.png");
+}
+.panel-arrowbox[part=arrowbox] {
+	z-index: 999;
+}
+
+scrollbox {
+	scroll-behavior: smooth;
+	overflow-y: auto;
+}
+
+.scrollbutton-up[orient=vertical],
+.scrollbutton-down[orient=vertical] {
+	visibility: collapse !important;
+}
+
+scrollbar {
+	scrollbar-color: hsla(0, 0%, 33%, 0.5) hsla(0, 0%, 0%, 0) !important;
+	scrollbar-width:auto !important;
+	background-color: hsla(0, 0%, 0%, 0.1);
+	background-image: var(--acrylic-background-image) repeat repeat !important;
+	backdrop-filter: var(--acrylic-backdrop-filter) !important;
+	background-blend-mode: var(--acrylic-background-blend-mode) !important;
+}
+
+/* Reduce minimum width of the sidebar */
+#sidebar {
+  min-width: 100px !important;
+}
+
+/* Hide sidebar header, when using Tree Style Tab. */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+	visibility:collapse;
+}
+
+:root[sizemode="maximized"][tabsintitlebar="true"] #navigator-toolbox {
+	margin-top: 5px;
+}
+#toolbar-menubar,
+#TabsToolbar > :not(.titlebar-buttonbox-container):not(.private-browsing-indicator) {
+	visibility:hidden !important;
+}
+
+.private-browsing-indicator {
+	background-size: 69%; /* <-- this isn't intentional i swear */
+	margin-inline-end: 6px;
+	opacity: 0.7;
+}
+/* Workaround v2 (Since #nav-bar is bad at laying out children (it doesnt respect ::after's width on small window widths), just make it get out of the way)*/
+:root[tabsintitlebar="true"] #nav-bar {
+	margin-right: max(150px, calc(100vw / 6.6)) !important;
+	background: none !important;
+}
+/* Then move the background to the parent to preserve proper look */
+:root[tabsintitlebar="true"] #navigator-toolbox {
+	background-color: var(--toolbar-bgcolor);
+	background-image: var(--toolbar-bgimage);
+	background-clip: padding-box;
+}
+
+#titlebar {
+	padding: 10px !important;
+	-moz-appearance: none !important;
+	position: fixed !important;
+	left: 0 !important;
+	right: 0 !important;
+	height: 36px !important;
+	display: flex !important;
+	align-items:center;
+	justify-content:end;
+}
+
+
+#navigator-toolbox:-moz-lwtheme {
+	--tabs-border-color: black !important;
+}
+
+#nav-bar {
+	padding: 5px !important;
+	font-size: 1em !important;
+}
+#nav-bar-customization-target {
+	padding-left: 5px !important;
+}
+
+
+#back-button,
+#forward-button {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	padding-top: 2px !important;
+}
+#back-button > .toolbarbutton-icon,
+#forward-button > .toolbarbutton-icon {
+	padding: 5px !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+#back-button > .toolbarbutton-icon {
+	list-style-image: url("img/back.svg") !important;
+}
+:root:not([uidensity="compact"]) #nav-bar #back-button > .toolbarbutton-icon {
+	--backbutton-background: transparent;
+	background-origin: unset !important;
+	background-clip: unset !important;
+	border: unset !important;
+	transition: unset !important;
+	width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+	padding: var(--toolbarbutton-inner-padding) !important;
+	border-radius: var(--toolbarbutton-border-radius) !important;
+}
+#forward-button > .toolbarbutton-icon {
+	list-style-image: url("img/forward.svg") !important;
+}
+#reload-button > .toolbarbutton-icon {
+	list-style-image: url("img/reload.svg") !important;
+}
+#history-panelmenu {
+	list-style-image: url("img/history.svg") !important;
+}
+#bookmarks-menu-button > .toolbarbutton-icon {
+	list-style-image: url("img/bookmarks.svg") !important;
+}
+#nav-bar-overflow-button > .toolbarbutton-icon {
+	list-style-image: url("img/overflow.svg") !important;
+}
+#PanelUI-menu-button > .toolbarbutton-icon {
+	list-style-image: url("img/menu.svg") !important;
+}
+
+#urlbar,
+#searchbar {
+	--urlbar-background: hsla(0, 0%, 0%, 0.025);
+}
+:root[lwthemetextcolor="bright"] #urlbar,
+:root[lwthemetextcolor="bright"] #searchbar {
+	--urlbar-background: hsla(0, 0%, 12%, 0.75);
+}
+#urlbar,
+#searchbar {
+	--urlbar-toolbar-height: 36px !important;
+}
+
+#searchbar {
+	background: none !important;
+	border: none !important;
+	position: relative;
+	box-shadow: none !important;
+}
+
+#searchbar > * {
+    position: relative !important;
+}
+
+#searchbar::before {
+    content: '';
+	position: absolute !important;
+    display: block;
+    inset: 0;
+    border-radius: var(--toolbarbutton-border-radius);
+}
+
+
+
+#urlbar:not([breakout-extend]) > #urlbar-background {
+	border: transparent !important;
+}
+
+#urlbar-input-container, #searchbar {
+	padding-right: 5px !important;
+	padding-left: 5px !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+	padding-right: 12px !important;
+	padding-left: 12px !important;
+}
+
+
+#identity-box[pageproxystate="invalid"] > #identity-icon {
+	box-sizing: border-box !important;
+	padding: 2px !important;
+/* 	  margin-bottom: -1px !important; */
+}
+
+.searchbar-search-icon {
+	padding: 2px;
+}
+
+#connection-icon {
+	padding: 2px !important;
+}
+
+#urlbar-go-button,
+.search-go-button {
+	padding: 7px !important;
+}
+
+#urlbar[pageproxystate="valid"] > #identity-box.verifiedDomain > #connection-icon,
+#urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity > #connection-icon,
+#urlbar[pageproxystate="valid"] > #identity-box.mixedActiveBlocked > #connection-icon {
+	fill: hsl(155, 50%, 45%) !important;
+}
+
+#PopupSearchAutoComplete {
+	margin-top: 6px !important;
+	padding: 10px !important;
+	box-shadow: inset 0 12px 11px -5px #00000030 !important;
+}
+.search-panel-current-engine {
+	padding-bottom: 10px !important;
+}
+.search-panel-tree {
+	display: grid !important;
+	gap: 10px !important;
+	padding: 10px 0 !important;
+}
+.search-one-offs {
+	padding-top: 5px !important;
+}
+.search-panel-header {
+	padding-bottom: 5px !important;
+}
+.search-panel-container {
+	padding-bottom: 8px !important;
+}
+
+/*zoom button */
+toolbar .toolbaritem-combined-buttons > .toolbarbutton-1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    margin-right: 6px;
+}
+toolbar .toolbarbutton-1 {
+    -moz-appearance: toolbarbutton !important;
+    padding: 0px var(--toolbarbutton-outer-padding);
+    -moz-box-pack: justify;
+}
+
+.bookmark-item > .menu-text,
+.bookmark-item > .menu-iconic-text {
+	margin-inline-start: 10px !important;
+}
+
+#zoom-reset-button {
+	margin-bottom: 5px !important;
+	font-size: 10px !important;
+}
+
+input {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	font-size: 1.05em !important;
+}
+
+#urlbar.megabar > #urlbar-background,
+#searchbar::before {
+	background: black !important;
+	box-shadow: none !important;
+	--toolbarbutton-border-radius: 5px;
+}
