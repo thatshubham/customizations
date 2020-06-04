@@ -167,13 +167,11 @@ scrollbar {
 
 #searchbar::before {
     content: '';
-	position: absolute !important;
+	  position: absolute !important;
     display: block;
     inset: 0;
-    border-radius: var(--toolbarbutton-border-radius);
+    border-radius: 1px !important;;
 }
-
-
 
 #urlbar:not([breakout-extend]) > #urlbar-background {
 	border: transparent !important;
@@ -185,8 +183,8 @@ scrollbar {
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
-	padding-right: 12px !important;
-	padding-left: 12px !important;
+	padding-right: 5px !important;
+	padding-left: 5px !important;
 }
 
 
@@ -215,11 +213,6 @@ scrollbar {
 	fill: hsl(155, 50%, 45%) !important;
 }
 
-#PopupSearchAutoComplete {
-	margin-top: 6px !important;
-	padding: 10px !important;
-	box-shadow: inset 0 12px 11px -5px #00000030 !important;
-}
 .search-panel-current-engine {
 	padding-bottom: 10px !important;
 }
@@ -238,17 +231,10 @@ scrollbar {
 	padding-bottom: 8px !important;
 }
 
-/*zoom button */
-toolbar .toolbaritem-combined-buttons > .toolbarbutton-1 {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    margin-right: 6px;
-}
 toolbar .toolbarbutton-1 {
     -moz-appearance: toolbarbutton !important;
     padding: 0px var(--toolbarbutton-outer-padding);
-    -moz-box-pack: justify;
+    -moz-box-pack:justify;
 }
 
 .bookmark-item > .menu-text,
@@ -258,17 +244,22 @@ toolbar .toolbarbutton-1 {
 
 #zoom-reset-button {
 	margin-bottom: 5px !important;
-	font-size: 10px !important;
+	font-size: 0.9em !important;
 }
 
-input {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-	font-size: 1.05em !important;
+toolbar .toolbaritem-combined-buttons {
+    margin-inline: 5px;
+    margin-top: 3px !important;
 }
 
-#urlbar.megabar > #urlbar-background,
-#searchbar::before {
-	background: black !important;
-	box-shadow: none !important;
-	--toolbarbutton-border-radius: 5px;
+#PanelUI-menu-button {
+    margin-top: 3px !important;
 }
+#_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action, #reload-button, #forward-button, #back-button, #_73a6fe31-595d-460b-a920-fcc0f8843232_-browser-action {
+	margin-top: 3px !important;;
+}
+:root:not([chromehidden~="toolbar"]) #nav-bar[nonemptyoverflow] > .overflow-button, #nav-bar[customizing] > .overflow-button
+{
+	margin-top: 3px !important;;
+}
+
