@@ -1,0 +1,18 @@
+/* ==========================
+   ====== Whitelist #1 ======
+   ========================== */
+
+.css-1dbjc4n.r-qklmqi.r-1adg3ll > div[data-testid="UserCell"] {
+    display: flex !important;
+}
+
+/* regex matching
+
+.*\://twitter.com/settings/.*
+.*\://twitter.com/.*\/follow.*
+.*\://twitter.com/.*\/status/.*\/retweets.*
+.*\://twitter.com/.*\/status/.*\/likes.*
+.*\://twitter.com/search.*&f=user
+.*\://twitter.com/hashtag/.*&f=user
+
+*/
