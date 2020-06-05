@@ -1,0 +1,102 @@
+/* Disable */
+  div:not(.bp)
+  {
+    background: transparent !important;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  /* Text */
+  div.u-textColorNormal, h1.u-textColorDark, p, span, div, figcaption, li, h1, h2, h3, h4
+  {
+    color: #f8f8f2 !important;
+     font-family: 'Titillium Web' !important;
+      
+  }
+
+  /* Root */
+  body
+  {
+    background-color: #1e1f26 !important;
+    color: #f8f8f2 !important;
+    
+  }
+
+h1, strong.bk {
+    font-size: 22px !important;
+    font-family: 'Titillium Web' !important;
+    line-height: 80% !important;
+}
+h2 {
+    font-size: 20px !important;
+    line-height: 80% !important;
+}
+
+p, li {
+    font-size: 18px !important;
+    font-family: 'Times new Roman' !important;
+    line-height: 24px !important;
+    background-color: #ffffff17;
+}
+
+a, strong.ge.id {
+    color: #6f8df4 !important;
+    font-family: Calibri;
+    text-decoration: none !important;
+    font-style: italic !important;
+}
+
+div.ok.ol.r, div.rm.r,rn.ro, div.n.p div.z.ab.ac.ae.af.ag.ah.ai,
+div.n.ff.fg.fh.fi.fj.fk.fl.fm.y,
+#lo-highlight-meter-1-highlight-box,
+div.r{
+    display: none !important;
+}
+
+.cq, .db, .dc {
+    min-width: 85% !important;
+}
+
+  /* Popup */
+  .bp, div.el.r.bw.h, button
+  {
+    background-color: #282a36 !important;
+    color: #9f9f9f !important;
+     font-family: 'Times New Roman' !important;
+  }
+div.hc.n.bw {
+    background-color: #121212 !important;
+    color: #9f9f9f !important;
+    padding: 0px !important;
+}
+
+blockquote>p {
+    font-family: 'Titillium Web' !important;
+    margin-left: 20px !important; 
+    background: #fff0;
+    font-size: 0.95em !important;
+    font-style: italic !important;
+    line-height: 95% !important;
+}
+
+  /* Logo */
+  svg, .aw, .ax
+  {
+    fill: #f8f8f2 !important;
+  }
+
+  /* Navigation */
+  nav
+  {
+    background-color: #6a737d33 !important;
+    padding-bottom: 5px;
+  }
+
+  .gist .highlight
+  {
+    background: #333;
+  }
+
+  .gist .blob-code, .gist .blob-num
+  {
+    color: #7a81a9;
+  }
