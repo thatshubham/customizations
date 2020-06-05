@@ -1,0 +1,23 @@
+/* ==========================
+   ====== Whitelist #2 ======
+   ========================== */
+
+div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty,
+
+div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep,
+.css-1dbjc4n.r-qklmqi.r-1adg3ll > div[data-testid="UserCell"],
+div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
+{
+    display: flex !important;
+}
+
+/*regex matching 
+
+.*\://twitter.com/explore
+.*\://twitter.com/.*\/status/.*
+.*\://twitter.com/.*\/moment.*
+.*\://twitter.com/.*\/topics.*
+.*\://twitter.com/.*\/events/.*
+.*\://twitter.com/.*\/lists/.*
+
+*/
