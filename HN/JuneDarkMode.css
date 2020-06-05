@@ -1,0 +1,139 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+body {
+    background-color: #171d28 !important;
+    }
+
+
+body > center > table, input, textarea {
+    background-color: #1b233085 !important;
+}
+
+body > center > table > tbody > tr:first-child > td {
+    
+    background-color: #0a0a0a85 !important;
+    }
+a {
+    font-family: 'Titillium Web';
+}
+/* Title */
+td.title a:link,td.title a:link:visited, td.title
+{
+    font-family: Bahnschrift !important;
+    padding-top: 10px !important;
+    font-size: 1.05em !important;
+    text-decoration: none !important;
+    font-weight: 100 !important;
+    color: #d2d2d2 !important;
+}
+
+td.title a:link:hover, td a {
+    color: #84acf8bf !important;
+    cursor: default;
+}
+
+span.pagetop, .pagetop a, .pagetop a:visited
+{
+    font-family: Roboto;
+    font-size: 0.9em;
+    color: #c1c1c1 !important;  
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 100;
+    background-color: #000;
+}
+
+/* comments */
+.c00,  .c5a, .c73, .c9c, .c88, .cdd, td>p, tbody td, body > b:nth-child(8)
+{
+    font-family: "Georgia";
+    font-size: 1.1em !important;
+    color: #cacaca !important;
+    cursor: default;
+}
+
+span.rank{
+    display:none;
+}
+
+code
+{
+    font-family: Courier New !important;
+    font-size: 1.1em !important;    
+    color: #fff !important;
+    background-color: #2e2e2e !important; 
+    padding: 0px !important;
+    font-weight: 400;
+}
+
+/* input button */
+input {
+    font-family: 'Titillium Web';
+    padding: 5px 5px 5px 5px !important;
+    font-size: 0.9em !important;
+    background-color: #000 !important;
+    border: 0.9em;
+    color: #aeaeae;
+}
+input:hover {
+    background-color: #40404091 !important;
+    cursor: default;
+    color: #ffffffc2;
+}
+
+.votearrow:hover {
+    background-color: #92e36885 !important;
+    cursor: pointer !important;
+    border: 1.5em !important;
+    }
+.votearrow {
+    margin-right: 1.1em !important;
+    opacity: 10%;
+    margin-top: 10px !important;
+}
+#hnmain > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) {
+    display: none !important;
+}
+
+textarea
+{
+    border: .5px solid !important;
+    font-family: Bahnschrift !important;
+    font-weight: bold;
+    line-height: 100% !important;
+    font-size: 11px !important;
+    padding: 5px !important;
+    color: #b6b6b6;
+    cursor: text;
+    background-color: #0e0e0e !important;
+}
+
+/*  subtext */
+.subtext, td.subtext a, span.score, td.subtext, subtext
+{
+    font-size: 1em !important;
+    padding: 0px;
+    color: #757575 !important;
+    font-family: Titillium Web !important;
+    font-weight: 200;
+    cursor: default;
+}
+.subtext  a:hover {
+    cursor: no-drop;
+    text-decoration: none !important;
+}
+
+a.hnuser:hover
+{   
+    color: #d5d5d5 !important;
+    cursor:default;
+}
+
+.comment p>a {
+    color: #e1e1e1 !important;
+    font-family: Consolas;
+}
+.reply a {
+    color: #555 !important;
+}
+
