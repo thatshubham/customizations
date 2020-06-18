@@ -32,24 +32,14 @@ td.title a:link:hover, td a {
     cursor: default;
 }
 
-span.pagetop, .pagetop a, .pagetop a:visited
-{
-    font-family: Roboto;
-    font-size: 0.9em;
-    color: #c1c1c1 !important;  
-    padding-left: 5px;
-    padding-right: 5px;
-    font-weight: 100;
-    background-color: #000;
-}
-
 /* comments */
 .c00,  .c5a, .c73, .c9c, .c88, .cdd, td>p, tbody td, body > b:nth-child(8)
 {
-    font-family: "Georgia";
-    font-size: 1.1em !important;
-    color: #cacaca !important;
+    font-family: 'Cambria';
+    font-size: 1.3em !important;
+    color: #dbdbdb !important;
     cursor: default;
+
 }
 
 span.rank{
@@ -137,3 +127,14 @@ a.hnuser:hover
     color: #555 !important;
 }
 
+span.pagetop, .pagetop a, .pagetop a:visited, 
+.pagetop
+{
+    font-family: Titillium Web;
+    color: #84b1d580 !important;  
+    background-color: #00000057;
+}
+
+#hnmain {
+    width: 70% !important;
+}
