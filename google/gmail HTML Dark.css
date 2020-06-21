@@ -46,7 +46,7 @@ a[href="?&v=cl"],
 a[href="?&s=d"],
 a[href="?&v=prl"],
 a[class="searchPageLink"] {
-    color: white;
+    color: white !important;
     text-decoration: none !important;
     font-family: consolas;
 }
