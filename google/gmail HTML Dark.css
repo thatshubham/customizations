@@ -1,0 +1,155 @@
+/*display none*/
+body > table:nth-child(15) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h1:nth-child(1) > a:nth-child(1) > img:nth-child(1),
+.ft > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > div:nth-child(3),
+.ft > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) {
+    display: none !important;
+}
+
+
+body,
+div[id="gbar"],
+.th > tbody:nth-child(1) > tr:nth-child(n),
+.m > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1),
+td {
+    background-color: #313030 !important;
+    color: white !important;
+}
+
+
+
+
+
+span.ts > font {
+    color: white;
+    font-weight: 100;
+}
+
+/*all links*/
+a[class="gb1"],
+b[class="gb1"],
+a[class="gb4"],
+b[class="gb4"],
+a[href="?&s=r"],
+a[href="?&"],
+a[href="?&s=r"],
+a[accesskey="c"],
+a[accesskey="r"],
+a[accesskey="a"],
+a[accesskey="f"],
+a:link,
+a[href="?&s=s"],
+a[href="?&s=a"],
+a[href="?&s=m"],
+a[href="?&s=t"],
+a[href="?&v=cl"],
+a[href="?&v=cl"],
+a[href="?&s=d"],
+a[href="?&v=prl"],
+a[class="searchPageLink"] {
+    color: white;
+    text-decoration: none !important;
+    font-family: consolas;
+}
+#sbq {
+    width: 155%;
+    height: 32.5px;
+    color: #eaeaea;
+    font-weight: bold;
+    background-color: #313131;
+    font-size: 1.2em;
+    border-radius: 10px;
+    padding: 0 2px;
+}
+#sbq:hover {
+    width: 185%;
+    transition: ease-out 0.25s;
+    cursor: pointer;
+}
+
+
+.th > tbody:nth-child(1) > tr:nth-child(n) > td:nth-child(3) > a:nth-child(1),
+span[class="ts"] {
+    color: #94b5f999;
+    font-family: Titillium Web;
+    font-weight: 100;
+    font-size: 1.15em;
+    line-height: 1.2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.th > tbody:nth-child(1) > tr:nth-child(n) > td:nth-child(n) {
+    max-width: 0%;
+    color: #9b9a9ac7 !important;
+    background-color:#222 !important;
+    font-family: Merriweather;
+    font-size: 0.8em;
+    text-align:justify-all;
+    font-weight: 100 !important;
+}
+
+input.search-form-submit,
+input[value="Archive"],
+input[value="Report Spam"],
+input[value="Delete"],
+input[value="Go"],
+select,
+input[value="Send"],
+input[value="Save Draft"],
+input[value="More Reply Options"] {
+    background: #000000a8;
+    color: #f2f2f2;
+    border-radius: 5px;
+    padding: 3 5px;
+    font-family: consolas;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+input.search-form-submit:hover,
+input[value="Archive"]:hover,
+input[value="Report Spam"]:hover,
+input[value="Delete"]:hover,
+input[value="Go"]:hover,
+input[value="Send"]:hover,
+input[value="Save Draft"]:hover,
+input[value="More Reply Options"]:hover {
+    background-color: #403f3f;
+    color: #4d8cb5;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/*misc*/
+body > table:nth-child(15) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(3) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > font:nth-child(1) > a:nth-child(1),
+body > table:nth-child(15) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(3) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > font:nth-child(3) > a:nth-child(1) {
+    margin: 60%;
+    color: white;
+    text-decoration: none !important;
+    font-family: consolas;
+}
+
+td[role="alert"] {
+    background-color: #fdee5d !important;
+    color: #000 !important;
+    border-radius: 5px;
+    padding: 2 2px;
+    border-style: groove;
+    font-family: consolas;
+    text-transform: uppercase;
+}
+
+textarea {
+    max-height: 50%;
+    background-color: black;
+}
+
+blockquote[class="gmail_quote"],
+div.msg {
+    background-color: #1e1e1e !important;
+    color: #eee;
+    border-radius: 2px;
+    font-size: 1em !important;
+    font-family: Georgia !important;
+}
