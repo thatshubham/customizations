@@ -46,6 +46,12 @@ width: 192px!important;
 height: 114px!important;
 }
 
+.theme--dark .TextHighlight--leo {
+    background: #c6c6c6a8;
+    color: #111;
+}
+
+
 /* Un-Pro */
 
 .entry.density-29.bsa-native-ad, .fx .modal-overlay.is-inline.is-fading,
@@ -72,12 +78,12 @@ display: none!important;
 .LeftnavListRow, .LeftnavListRow__count, .LeftnavListRow__text  {
     border-left: 2px solid transparent;
     font-family: Bahnschrift !important;
-    color: #bdbdbd;
+    color: #acacac;
     font-size: 0.655rem !important;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     padding-left: 5px;
     padding-right: 10px;
-    font-weight: 200 !important;
+    font-weight: 100 !important;
 }
 
 .LeftnavListRow:hover, .LeftnavListRow__text:hover {
@@ -116,10 +122,10 @@ display: none!important;
 .summary, li.MemeSummary__item {
     padding: 0px !important;
     margin-bottom: 10px !important;
-    font-family: Calibri !important;
+    font-family: 'Titillium Web' !important;
     font-size: 1.2em !important;
-    color: #cecece !important;
-    font-weight: 100 !important;
+    color: #d0d0d0 !important;
+    background: #49595e5c;
 }
 
 .theme--dark .LeftnavDock {
@@ -134,8 +140,8 @@ display: none!important;
 .fx .entry.u4 .title {
     font-size: 20px;
     font-weight: 600 !important;
-    font-family: Bahnschrift !important;
-    line-height: 1.15em;
+    font-family: 'Merriweather' !important;
+    line-height: 1.1em;
     margin-bottom: 0.25rem;
     margin-top: 0;
     text-decoration: none;
@@ -144,4 +150,17 @@ display: none!important;
 }
 div.LeftnavListRow:nth-child(8), div.LeftnavListRow:nth-child(4) > span:nth-child(2) {
     padding-top: 20px !important;
+}
+
+.LeftnavList
+{
+    max-width: 82% !important;
+}
+
+.Leftnav__pin {
+    margin-left: -10px !important;
+}
+
+div[class="row"] {
+    margin-left: -35px !important;
 }
