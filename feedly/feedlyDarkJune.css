@@ -6,8 +6,14 @@ max-width: 100%!important;
 
 /* Wide Magazine + Wide Feedly */
 
-#sideArea, .col-xl-3.xlarge-only {
+#sideArea, .col-xl-3.xlarge-only,
+div[class="widget widget-related-feeds"],
+div[class="col-xl-3 col-xl-3-xlarge-only"]{
 display: none!important;
+}
+
+.feedlyFrame--xlarge .col-xl-9.col-xl-9-xlarge-only {
+    width: 100%;
 }
 
 .today .col-xs-12.col-md-12, .today .col-lg-12.col-xl-9,
