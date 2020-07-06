@@ -30,3 +30,7 @@ a.yt-simple-endpoint.yt-formatted-string {
 [id="author-thumbnail"] {
     display: none !important;
 }
+
+[id="video-title"] {
+        text-transform: lowercase !important;
+}
