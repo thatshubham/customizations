@@ -1,4 +1,7 @@
-ytd-primetime-promo-renderer.style-scope, ytd-rich-section-renderer.style-scope:nth-child(14) > div:nth-child(1) > ytd-rich-shelf-renderer:nth-child(1) > div:nth-child(1), ytd-rich-section-renderer.style-scope:nth-child(19) > div:nth-child(1) > ytd-rich-shelf-renderer:nth-child(1) > div:nth-child(1) {
+ytd-primetime-promo-renderer.style-scope, ytd-rich-section-renderer.style-scope:nth-child(14) > div:nth-child(1) > ytd-rich-shelf-renderer:nth-child(1) > div:nth-child(1), ytd-rich-section-renderer.style-scope:nth-child(19) > div:nth-child(1) > ytd-rich-shelf-renderer:nth-child(1) > div:nth-child(1),
+[class="style-scope ytd-compact-promoted-item-renderer"],
+[id="secondary"],
+[id="comments"]{
     display: none !important;
 }
 
@@ -8,8 +11,8 @@ ytd-primetime-promo-renderer.style-scope, ytd-rich-section-renderer.style-scope:
 [class="bold style-scope yt-formatted-string"] {
     font-family: 'Roboto';
     font-size: 14px !important;
-    line-height: 1.3em !important;
     font-weight: 400 !important;
+    line-height: 1.4em;
 }
 
 [id="clarify-box"] {
@@ -19,12 +22,17 @@ ytd-primetime-promo-renderer.style-scope, ytd-rich-section-renderer.style-scope:
 [id="author-text"],
 [class="published-time-text above-comment style-scope ytd-comment-renderer"],
 ytd-button-renderer #button.ytd-button-renderer,
-paper-button.yt-next-continuation,
-a.yt-simple-endpoint.yt-formatted-string {
-    color: #838383 !important;
-    font-family: 'Roboto';
-    font-size: 12px !important;
-    text-transform: uppercase !important;
+paper-button.yt-next-continuation {
+    color: #d5d5d5bf !important;
+    padding-top: 5px;
+    text-transform: lowercase !important;
+    font-weight: 100 !important;
+ }
+
+a.yt-simple-endpoint.yt-formatted-string
+{
+    font-family: 'open sans';
+    font-weight: bold;
 }
 
 [id="author-thumbnail"] {
@@ -32,5 +40,16 @@ a.yt-simple-endpoint.yt-formatted-string {
 }
 
 [id="video-title"] {
-        text-transform: lowercase !important;
+    text-transform: lowercase !important;
+    color: #eee !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
 }
+
+#grid-container.ytd-expanded-shelf-contents-renderer > .ytd-expanded-shelf-contents-renderer,
+.text-wrapper.ytd-video-renderer {
+    max-width: 110%;
+    min-width: 85% !important;
+}
+
+
