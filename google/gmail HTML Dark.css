@@ -1,7 +1,10 @@
 /*display none*/
 body > table:nth-child(15) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h1:nth-child(1) > a:nth-child(1) > img:nth-child(1),
 .ft > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > div:nth-child(3),
-.ft > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) {
+.ft > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1),
+[alt="Gmail by Google"],
+td[rowspan="3"],
+[id="bm"] {
     display: none !important;
 }
 
@@ -15,12 +18,8 @@ td {
     color: white !important;
 }
 
-
-
-
-
 span.ts > font {
-    color: white;
+    color: white !important;
     font-weight: 100;
 }
 
@@ -48,47 +47,87 @@ a[href="?&v=prl"],
 a[class="searchPageLink"] {
     color: white !important;
     text-decoration: none !important;
-    font-family: consolas;
+    font-family: 'Courier New', Courier, monospace;
 }
-#sbq {
-    width: 155%;
+
+a[class="gb1"]:hover,
+b[class="gb1"]:hover,
+a[class="gb4"]:hover,
+a[href="?&s=r"]:hover,
+a[href="?&"]:hover,
+a[href="?&s=r"]:hover,
+a[accesskey="c"]:hover,
+a[accesskey="r"]:hover,
+a[accesskey="a"]:hover,
+a[accesskey="f"]:hover,
+a[href="?&s=s"]:hover,
+a[href="?&s=a"]:hover,
+a[href="?&s=m"]:hover,
+a[href="?&s=t"]:hover,
+a[href="?&v=cl"]:hover,
+a[href="?&v=cl"]:hover,
+a[href="?&s=d"]:hover,
+a[href="?&v=prl"]:hover,
+a[class="searchPageLink"]:hover
+{
+    color: #6bfa66 !important;
+    background: #454545;
+    font-size: 1.3em;
+    transition: ease-out 0.15s;
+    width: 110% !important;
+}
+
+#sbq,
+[id="to"],
+[id="cc"],
+[id="bcc"],
+[name="subject"],
+[type="text"]{
     height: 32.5px;
     color: #eaeaea;
-    font-weight: bold;
+    font-weight: 100;
     background-color: #313131;
     font-size: 1.2em;
     border-radius: 10px;
     padding: 0 2px;
 }
-#sbq:hover {
-    width: 185%;
-    transition: ease-out 0.25s;
-    cursor: pointer;
-}
 
+#sbq:focus,
+[id="to"]:focus,
+[id="cc"]:focus,
+[id="bcc"]:focus,
+[name="subject"]:focus,
+[type="text"]:focus{
+background: #000;
+border-radius: 5px;
+    padding: 0 5px;
+    transition: ease-out 0.25s;
+}
 
 .th > tbody:nth-child(1) > tr:nth-child(n) > td:nth-child(3) > a:nth-child(1),
-span[class="ts"] {
-    color: #94b5f999;
-    font-family: Titillium Web;
-    font-weight: 100;
-    font-size: 1.15em;
-    line-height: 1.2em;
-    margin-top: 5px;
-    margin-bottom: 5px;
+span[class="ts"],
+[bgcolor="#E8EEF7"] {
+    color: #8fa0c5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px 0px 20px 0px;
+    font-weight: bold;
 }
+
+
 
 
 .th > tbody:nth-child(1) > tr:nth-child(n) > td:nth-child(n) {
-    max-width: 0%;
     color: #9b9a9ac7 !important;
+    width: 0%;
+    margin-left:-2%;
     background-color:#222 !important;
-    font-family: Merriweather;
-    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
     text-align:justify-all;
-    font-weight: 100 !important;
+    padding: 10px 0px 10px 0px;
 }
 
+
+/* buttons*/ 
 input.search-form-submit,
 input[value="Archive"],
 input[value="Report Spam"],
@@ -97,15 +136,18 @@ input[value="Go"],
 select,
 input[value="Send"],
 input[value="Save Draft"],
-input[value="More Reply Options"] {
-    background: #000000a8;
+input[value="More Reply Options"],
+[value="Cancel"], [value="Test Search"], [value="Next Step"], [value="Create a new Filter"],
+[class="on"] {
+    background: #272727a8 !important;
     color: #f2f2f2;
     border-radius: 5px;
-    padding: 3 5px;
-    font-family: consolas;
+    padding: 5px 8px;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 100;
     text-transform: uppercase;
 }
+
 input.search-form-submit:hover,
 input[value="Archive"]:hover,
 input[value="Report Spam"]:hover,
@@ -113,7 +155,11 @@ input[value="Delete"]:hover,
 input[value="Go"]:hover,
 input[value="Send"]:hover,
 input[value="Save Draft"]:hover,
-input[value="More Reply Options"]:hover {
+input[value="More Reply Options"]:hover,
+
+
+[value="Cancel"]:hover, [value="Test Search"]:hover, [value="Next Step"]:hover, [value="Create a new Filter"]:hover
+{
     background-color: #403f3f;
     color: #4d8cb5;
     font-weight: 600;
@@ -125,9 +171,9 @@ input[value="More Reply Options"]:hover {
 body > table:nth-child(15) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(3) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > font:nth-child(1) > a:nth-child(1),
 body > table:nth-child(15) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(3) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > font:nth-child(3) > a:nth-child(1) {
     margin: 60%;
-    color: white;
+    color: #cacaca;
     text-decoration: none !important;
-    font-family: consolas;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 td[role="alert"] {
@@ -136,7 +182,7 @@ td[role="alert"] {
     border-radius: 5px;
     padding: 2 2px;
     border-style: groove;
-    font-family: consolas;
+    font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
 }
 
@@ -151,5 +197,5 @@ div.msg {
     color: #eee;
     border-radius: 2px;
     font-size: 1em !important;
-    font-family: Georgia !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
