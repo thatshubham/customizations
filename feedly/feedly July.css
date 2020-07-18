@@ -69,8 +69,8 @@ div[class="floatingEntryScroller"]
 div[class="entryHeader"] {
     font-size: 1.8em !important;
     text-align:  left !important;
-    max-width: 95% !important;
-    margin-left: -15%;
+    max-width: 90% !important;
+    margin-left: -5%;
     line-height: 135% !important;
 }
 
