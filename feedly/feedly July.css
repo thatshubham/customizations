@@ -71,7 +71,7 @@ div[class="entryHeader"] {
     text-align:  left !important;
     max-width: 90% !important;
     margin-left: -5%;
-    line-height: 135% !important;
+    line-height: 155% !important;
 }
 
 
@@ -88,11 +88,8 @@ display: none!important;
 }
 .fx h1 {
     color: #b0b0b0 !important;
-    font-size: 1.125rem;
-    letter-spacing: -0.04em;
-    line-height: 0;
-    text-align: left;
-    text-transform: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 .m-t-2 {
     margin-top: 1rem !important;
@@ -100,19 +97,19 @@ display: none!important;
 
 .LeftnavListRow, .LeftnavListRow__count, .LeftnavListRow__text  {
     border-left: 2px solid transparent;
-    font-family: Bahnschrift !important;
-    color: #acacac;
+    font-family:  Open Sans !important;
+    color: #cacaca;
+    text-transform: uppercase;
     font-size: 0.655rem !important;
-    line-height: 1.5rem;
-    padding-left: 5px;
+    line-height: 2rem;
+    padding-left: 0px;
     padding-right: 10px;
-    font-weight: 100 !important;
+    font-weight: 400;
 }
 
 .LeftnavListRow:hover, .LeftnavListRow__text:hover {
     cursor: pointer;
-    padding-left: 6px;
-    font-size: 0.815rem;
+    letter-spacing: 2px;
     color: #fafafa;
 }
 
@@ -137,17 +134,18 @@ display: none!important;
     font-weight: 200 !important;
     line-height: 2px !important;
     padding-right: 0.6rem;
-    flex-direction: row;
     justify-content: space-between;
     
 }
 
 .summary, li.MemeSummary__item {
-    padding: 0px !important;
-    margin-bottom: 10px !important;
-    font-family: 'Titillium Web' !important;
+    margin-bottom: 40px !important;
+    margin-top: 10px !important;
+    font-family: fira code, Roboto, Open Sans !important;
     font-size: 1.2em !important;
-    color: #d0d0d0 !important;
+    font-variant: all-small-caps;
+    color: #bebebe !important;
+    letter-spacing: 01px;
 }
 
 .theme--dark .LeftnavDock {
@@ -160,15 +158,17 @@ display: none!important;
 }
 
 .fx .entry.u4 .title {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 600 !important;
-    font-family: 'Merriweather' !important;
+    font-family: 'Segoe UI' !important;
     line-height: 1.1em;
     margin-bottom: 0.25rem;
     margin-top: 0;
     text-decoration: none;
-    width: 100%;
-    color: #e6e6e6 !important;
+    width: auto;
+    padding: 1%;
+    color: #c9c9c9 !important;
+    background: #ffffff2e !important;
 }
 div.LeftnavListRow:nth-child(8), div.LeftnavListRow:nth-child(4) > span:nth-child(2) {
     padding-top: 20px !important;
@@ -190,3 +190,18 @@ div[class="row"] {
 ::selection
 {
 color: #d0d0d0; background: #605a36; }
+
+
+[id="feedlyPageHolderFX"]
+{
+    padding-top: 0 !important;
+}
+
+[class="LeftnavListRow__text LeftnavListRow__text--child"],
+.LeftnavListRow__text--child
+{
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    width: 75%;
+    line-height: 1rem;
+}
