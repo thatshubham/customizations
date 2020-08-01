@@ -1,0 +1,56 @@
+[class="result__snippet js-result-snippet"]
+{
+    font-family: 'Roboto';
+    font-size: 1.1em;
+}
+
+[class="module__body js-about-item"] img
+{
+    filter: invert(0.9);
+}
+
+[class="module__body js-about-item"],
+[class="module__text"]
+{
+    font-family: 'Merriweather';
+    color: #dacfae;
+    line-height: 1.4em;
+}
+
+[class="result__a"]{
+    padding-bottom: 5px;
+    font-size: 1.4em;
+    font-weight: 100 !important;
+}
+b{
+    color: #7e9bff;
+}
+
+[class="result__a"]:hover
+{
+    cursor: zoom-in;
+    text-decoration: none;
+    color: #7e9bff !important;
+}
+
+
+[class="results--main"] {
+    max-width: 700px;
+}
+
+[class="result__snippet js-result-snippet"]:hover
+{
+    text-decoration: none;
+    color: #f0f0f0 !important;
+}
+
+[class="result__url__domain"], [class="result__url__full"]:hover
+{
+    color: #7e9bff !important;
+    text-decoration: none !important;
+    font-family: roboto;
+}
+
+a:visited {
+    color: #9bcafd !important;
+}
