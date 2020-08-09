@@ -1,0 +1,24 @@
+body {
+    filter: invert(0.86);
+    box-shadow: none !important;
+}
+
+img {
+    filter: invert(1);
+}
+
+a {
+    color: #747013 !important;
+}
+
+div,
+p,
+a {
+    color: #000;
+    font-weight: bolder;
+    box-shadow: none !important;
+}
+
+[role="link"]:hover {
+    background: #fed29e !important;
+}
