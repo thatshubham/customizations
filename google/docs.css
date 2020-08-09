@@ -1,0 +1,37 @@
+body
+{
+    filter: invert(0.86);
+    box-shadow: none !important;
+}
+[role="button"]
+{
+    filter: invert(0.15);
+}
+
+[role="tooltip"]
+{
+    filter: invert(0.1);
+    background: white;
+}
+
+img,
+[class="kix-page docs-page docs-page-portrait kix-page-paginated"],
+[class="goog-inline-block goog-flat-menu-button docs-flatcolormenubutton"],
+[class="docs-material-colorpalette-colorswatch docs-material-colorpalette-colorswatch-dark"]
+{ filter: invert(1); }
+
+a{
+    color: #747013 !important;
+}
+
+div, p, a
+{
+    color: #000;
+    font-weight: bolder;
+    box-shadow: none !important;
+}
+
+[role="link"]:hover
+{
+    background: #fed29e !important;
+}
