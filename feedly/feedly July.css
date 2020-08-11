@@ -178,7 +178,10 @@ div.LeftnavListRow:nth-child(8), div.LeftnavListRow:nth-child(4) > span:nth-chil
 }
 
 [class="Leftnav__pin LeftnavPin"] {
-    display: none !important;
+    margin-left: -5px;
+    background-image: none;
+    border: none !important;
+    opacity: 50%;
 }
 
 div[class="row"] {
