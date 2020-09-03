@@ -1,202 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 @namespace url(http://www.w3.org/1999/xhtml);
 
+
 body {
-    background-color: #151515c7
-        
+    background-color: #171717 !important;
+}
 
-    }
-
-
-body > center > table, textarea {
-    /*background-color: #dbdbdbdb !important;*/
-  background-image: repeating-linear-gradient(#2e2e2e, #000, #2e2e2e);
-    
-    
+body > center > table {
+    background-color: #171717 !important;
+    margin: 0 100 !important;
+    max-width: 75%;
 }
 
 body > center > table > tbody > tr:first-child > td {
-    
-    background-color: #1a1a1ab0 !important;
-    }
+    background-color: #111544 !important;
+    border-radius: 25px;
+    padding: 0 25;
+}
 
-td.title a:link:hover, td a {
-    color: #a7c2ec !important;
-    font-family: Open Sans !important;
-    font-size: 0.95em;
- } 
 /* Title */
-td.title a:link, td.title
-{
-    font-family: Open Sans !important;
-    padding-top: 10px !important;
-    font-size: 1.05em !important;
+td.title a:link,
+td.title {
+    font-family: noto sans jp, comic sans ms !important;
+    font-size: 1.2em !important;
     text-decoration: none !important;
-    font-weight: 400;
-    color: #dadada !important;
-    text-shadow: 1px 1px 2px rgba(124, 197, 246, .65);
-    letter-spacing: 0;
+    color: #c1c1c1 !important;
+    background: none;
+}
+code {
+    font-family: Fira Code, "Courier New", Courier, monospace !important;
+    font-size: inherit;
+    color: #c8c8c8 !important;
+    background-color: #282828cf !important;
 }
 
-
-
-span.rank{
-    display:none;
-}
-
-code
-{
-    font-family: Fira Code !important;
-    font-size: 16px !important;    
-    color: #282828 !important;
-    background-color: #dbdbdbcf !important; 
-    padding: 0px !important;
-    font-weight: 100;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
+select {
+    background: #232e45;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 
 /* input button */
 input {
-    font-family: Open Sans !important;
-    background-color: #c3c3c3;
-    border: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif !important;
     border-radius: 5%;
-    padding: 1px;
-    color: black;
+    padding: 8px;
+    border: black;
 }
 
-[type="submit"] {
-    font-family: Open Sans !important;
+[type="submit"],
+[class="morelink"] a {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
     font-variant: all-small-caps;
-    padding: 1% !important;
-    font-size: 0.8em !important;
-    background: #000;
-    border: 0em;
-    color: #90a1e3;
-    border-radius: 5px;
-} 
+    background: #3f434a;
+    color: #e7ecff;
+}
 [type="submit"]:hover {
-    background-color: #90a1e3 !important;
-    color: #000000e8;
-    transition: ease-in 0.3s;
+    background-color: #2d426e !important;
+    color: #ffffffe8;
+    transition: ease-in 0.2s;
     border-radius: 5px;
-    text-shadow: 1px 1px 2px rgba(46, 80, 128, .29);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .29);
 }
 
-.votearrow {
-    margin-right: 1.1em !important;
-    opacity: 30%;
-    margin-top: 10px !important;
-}
 #hnmain > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) {
     display: none !important;
 }
 
-textarea
-{
-    border: .5px solid !important;
+textarea {
+    border: 0.5px solid black !important;
+    background: #232e45;
+    font-family: open sans;
+    color: #c1c1c1;
+}
+
+[class="comhead"],
+a.hnuser {
+
     font-family: Open Sans !important;
-    font-weight: 100;
-    line-height: 100% !important;
-    font-size: 20px !important;
-    padding: 10px !important;
-    color: #cecece;
-    max-height: max-content;
-    min-width: max-content;
-    text-shadow: 1px 1px 1px rgba(219, 219, 219, .58);
-    cursor: text;
+    cursor: default;
 }
 
 /*  subtext */
-.subtext, td.subtext a, span.score, td.subtext, subtext
-{
-    font-size: 90% !important;
-    padding: 0px;
-    color: #9b9b9b !important;
-    font-family: Open Sans !important;
-    font-weight: 200;
+.subtext,
+td.subtext a,
+span.score,
+td.subtext {
+    font-size: 12px !important;
+    color: #6f7b9b !important;
+    font-family: open sans;
     cursor: default;
+    width: 800px;
+    font-weight: 300 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1;
+    padding-bottom: 50 !important;
 }
-.subtext  a:hover {
+
+td.title,
+td.subtext {
+    line-height: 1.2em !important;
+    padding-bottom: 5;
+}
+
+.subtext a:hover {
     cursor: no-drop;
     text-decoration: none !important;
-    
 }
 
-a.hnuser:hover
-{   
-    color: #e6cb61 !important;
+a.hnuser:hover {
+    color: #557de6 !important;
     font-weight: bold;
-    cursor:default;
-    font-size: 1.2em !important;
+    cursor: default;
+    text-transform: uppercase;
     text-decoration: none;
-    font-variant-caps: all-petite-caps;
-    
 }
 
-.comment p>a {
-    color: #c1c1c1 !important;
-    font-family: 'Literata' !important;
+.comment p > a,
+[rel="nofollow"] {
+    font-family: Open Sans !important;
+    overflow: visible;
+    text-decoration: none !important;
 }
 .reply a {
     color: #c6c6c6 !important;
 }
 
-span.pagetop, .pagetop a, .pagetop a:visited, 
-.pagetop
-{
-    font-family: Open Sans !important;
-    color: #d4d4d4 !important;  
-    background-color: #fff0;
-    font-variant-caps: small-caps;
-    padding: 0.8%;
-    
+b {
+    color: #eee;
+}
+
+[src="yc500.gif"] {
+    filter: invert(0.8)
 }
 
 #hnmain {
-    width: 80%;
+    width: 100%;
 }
 
 a:visited,
-[href="forgot"]{
-    color: #93baff !important;
+a,
+[href="forgot"] {
+    color: #81b5ee !important;
+    text-shadow: none !important;
 }
 
-
-::selection
-{
-    color: #151515;
-    background: #ffffff96;
+::selection {
+    color: #232e45;
+    background: #fafafa;
     text-decoration: none !important;
+    text-shadow: none !important;
 }
 
 /* comments */
-.cce, .text, .cbe, .c00, .c5a, .c73, .c9c, .c88, .cdd, .cae, td>p, tbody td,  body > b:nth-child(8), body > b:nth-child(1)
-{
-    font-family: 'Literata' !important;
+.cce,
+.text,
+.cbe,
+.c00,
+.c5a,
+.c73,
+.c9c,
+.c88,
+.cdd,
+.cae,
+td > p,
+p,
+tbody td,
+body > b:nth-child(8),
+body > b:nth-child(1) {
+    font-family: 'Noto Sans JP', Garamond, Georgia, "Times New Roman", Times, serif !important;
     font-size: 16px !important;
-    line-height: 150%;
-    color: #d4d4d4 !important;
-    cursor: default;    
-    text-shadow: 1px 1px 2px rgba(192, 232, 250, .31);
+    color: #c6c6c6d9 !important;
 }
 
 [action="login"],
 [href="forgot"],
-body > b:nth-child(8), body > b:nth-child(1) {
+body > b:nth-child(8),
+body > b:nth-child(1) {
     padding-left: 40%;
+    padding-right: 40%;
 }
 
-[class="age"] {
+
+[class="yclinks"],
+span.rank {
     display: none;
 }
 
-td.title a:link:hover, a:visited:hover {
-    font-weight: bold;
-    border-radius: 5px !important;
-    background: repeating-linear-gradient(#a2a2a2e6, #e1e1e1) !important;
-    transition: ease-in;
-    padding: 2px;
-    color: #353535 !important;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+#hnmain > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1),
+span.pagetop,
+.pagetop,
+.pagetop a,
+.pagetop a:visited {
+    font-weight: 300;
+    font-variant-caps: all-small-caps;
+    color: #e8e8e8 !important;
+    font-family: open sans !important;
+    margin: 20 0;
 }
 
+td.title a:link:hover,
+a:visited:hover,
+.pagetop a:hover {
+    color: #a7c2ec !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+    border-radius: 5px !important;
+    transition: ease-in;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.votearrow {
+    display: none;
+}
