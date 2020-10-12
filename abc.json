@@ -1,0 +1,22 @@
+{
+  "hosting": {
+    "public": "public",
+    "cleanUrls": true,
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [ {
+      "source": "**",
+      "headers": [ 
+          {"key":"Content-Security-Policy","value":"script-src 'self'"},
+          {"key":"Strict-Transport-Security", "value":"max-age=31536000"},
+          {"key":"X-Frame-Options", "value":"DENY"},
+          {"key":"X-XSS-Protection", "value":"1"},
+          {"key":"X-Content-Type-Options", "value":"nosniff"}
+      ]
+      }
+    ]
+  }
+}
