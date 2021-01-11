@@ -1,6 +1,5 @@
 [class="result__snippet js-result-snippet"]
 {
-    font-family: 'Roboto';
     font-size: 1.1em;
 }
 
@@ -12,31 +11,46 @@
 [class="module__body js-about-item"],
 [class="module__text"]
 {
-    font-family: 'Merriweather';
-    color: #dacfae;
-    line-height: 1.4em;
+    color: #909bb2 !important;
+    font-size: 1.05em;
 }
 
+
+[class="module module--about module--zci-wikipedia_fathead js-module--wikipedia_fathead js-about-module has-content-height"],
+[class="module module--about module--zci-wikipedia_fathead js-module--wikipedia_fathead js-about-module has-content-height is-expanded"],
+[class="js-about-item-abstr"]{      
+    color: #d2d2d2;
+    word-wrap: break-word;
+    border: none;
+    box-shadow: none;
+	font-family: 'Roboto';
+	font-size: 1.2rem;
+     }
+
+[class="module module--about module--zci-wikipedia_fathead js-module--wikipedia_fathead js-about-module has-content-height"],
+[class="module module--about module--zci-wikipedia_fathead js-module--wikipedia_fathead js-about-module has-content-height is-expanded"]
+{
+	margin-left: 100px;
+	width: auto;
+	background-color: #2b4477 !important; 
+	
+}
 [class="result__a"]{
     padding-bottom: 5px;
     font-size: 1.4em;
     font-weight: 100 !important;
 }
 b{
-    color: #7e9bff;
+    color: #90c3ff;
 }
 
 [class="result__a"]:hover
 {
     cursor: zoom-in;
     text-decoration: none;
-    color: #7e9bff !important;
+    color: #6b8cff !important;
 }
 
-
-[class="results--main"] {
-    max-width: 700px;
-}
 
 [class="result__snippet js-result-snippet"]:hover
 {
@@ -48,9 +62,29 @@ b{
 {
     color: #7e9bff !important;
     text-decoration: none !important;
-    font-family: roboto;
 }
 
-a:visited {
-    color: #9bcafd !important;
+a:visited, a:visited:hover, a link:visited {
+    color: #8a87ee !important;
+	text-decoration: none !important;
 }
+
+html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--carousel__image-wrapper, .result__image, .vertical--map__sidebar, .vertical--map__sidebar__header, .page-chrome_newtab, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded .metabar:not(.is-stuck) {
+	background: rgb(36,36,36);
+	background: linear-gradient(90deg, rgba(36,36,36,1) 0%, rgba(43,63,82,1) 100%); 
+}
+
+.header-wrap, .vertical--map--sidebar-left .has-requery .vertical--map__sidebar__header, .map-requery-mobile, .footer, .footer--mobile {
+background: rgb(36,36,36);
+	background: linear-gradient(90deg, rgba(36,36,36,1) 0%, rgba(43,63,82,1) 100%); 
+	box-shadow: none;
+}
+
+.search-filters-wrap::before, .search-filters-wrap::after {
+	background: none;
+}
+
+[id="links"] a {
+	line-height: 1.5 !important;
+}
+
