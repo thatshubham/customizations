@@ -1,0 +1,108 @@
+span, div, strong, a
+{
+	font-family: Fira Code;
+	color: #e6e6e6 !important;
+}
+
+
+.column-inline-form, .column>.scrollable, .error-column, .getting-started, .regeneration-indicator, .drawer__header, .drawer__inner,.getting-started .column-link, .scrollable .column-link,
+.dropdown-menu, .dropdown-menu__item a{
+    
+	border: none;
+	
+	
+}
+
+.column-subheading, .column-header, .account__header__bar, .column-header__back-button, .column-header__button, .column-header__button.active, .directory__card__extra, .column-back-button, .column-header, .account__header__fields .verified, .account__header__fields .verified a, .account__header__fields .verified i,
+.dropdown-menu__item a:hover
+{ 
+	border: none;
+	
+
+}
+
+[class="column"], .drawer
+{
+	width: calc(80%/3);
+	letter-spacing: -1px;	
+}
+
+[aria-label="Compose new toot"]
+{
+	width: 20%;
+	background: #000;
+	opacity: 0.8;
+}
+
+[class="compose-form"]
+{
+	filter: invert(1);
+}
+
+
+.compose-form .autosuggest-textarea__textarea {
+    min-height: 150px;
+}
+
+
+.fa-fw
+{
+	opacity: 0.5;
+}
+
+/*[class="status__wrapper status__wrapper-public focusable"],
+[class="notification notification-favourite focusable"],
+[class="detailed-status detailed-status-unlisted"],
+[class="detailed-status detailed-status-public"]
+{
+	padding-top: 1.2%;
+}*/
+
+[class="dropdown-menu bottom"], [class="dropdown-menu bottom"] a
+{
+	box-shadow: none !important;
+}
+[class="dropdown-menu bottom"] a:hover
+{
+	font-style: italic;
+}
+
+
+[class="status__avatar"]
+{
+	display: none;
+	width: 0 !important;
+}
+
+.status, p, [class="status__content__text status__content__text--visible"]
+{
+	padding: 8px;
+	margin: 0 !important;
+	line-height: 1.5;
+	color: #d0d0d0 !important;
+	letter-spacing: -1px;
+	font-size: 14px;
+	background: rgb(36,36,36);
+	background: linear-gradient(90deg, rgba(36,36,36,1) 0%, rgba(43,63,82,1) 100%); 
+}
+
+.status, a, [class="status__prepend"] span, [class="notification__message"] span, span a span, p a span,
+[class="display-name__account"],
+[class="display-name__html"], [class="status__display-name muted"] strong
+{ 
+	font-size: 12px;
+	color: #7bc474 !important;
+	font-weight: 400;
+	letter-spacing: 0;
+}
+
+
+[class="column-header"], [class="column-header active"], [class="column-header__back-button"], .column-header__button 
+{
+	background: #5e308c00 !important;
+}
+
+img {
+	filter: brightness(0.6);
+}
+
